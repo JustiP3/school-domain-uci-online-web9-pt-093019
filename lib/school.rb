@@ -14,13 +14,12 @@ def grade(number)
 @roster[number]
 
 end #end of grade method
+
 def sort
 #@roster.sort pointless bc returns a new array doesnt modify values
 
-sorted_array = []
 @roster.each do |gr, students|
-sorted_array = students.sort
-@roster[gr] = sorted_array
+@roster[gr] = students.sort 
 end # end of each
 return @roster
 end #end of sort method
