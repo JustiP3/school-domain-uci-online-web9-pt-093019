@@ -27,7 +27,7 @@ sorted_array = []
 sorted_array = students.sort
 @roster[gr] = sorted_array
 end # end of each
-return @roster 
+return @roster
 end #end of sort method
 
 
