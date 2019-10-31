@@ -19,7 +19,7 @@ def sort
 #@roster.sort pointless bc returns a new array doesnt modify values
 
 @roster.each do |gr, students|
-@roster[gr] = students.sort 
+@roster[gr] = students.sort
 end # end of each
 return @roster
 end #end of sort method
