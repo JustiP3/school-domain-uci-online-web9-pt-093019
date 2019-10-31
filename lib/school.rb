@@ -6,16 +6,13 @@ def initialize(name)
   @roster = {}
 end
 def add_student(student, grade)
-  @roster[grade] ||= student
+  @roster[grade] ||= []
    @roster[grade] << student
 
 end
 def grade(number)
-@roster.each do |gr, students|
-  if gr == number
-    return students
-  end #end of if
-end #end of each iterator
+@roster[number]
+
 end #end of grade method
 def sort
 #@roster.sort pointless bc returns a new array doesnt modify values
