@@ -6,11 +6,9 @@ def initialize(name)
   @roster = {}
 end
 def add_student(student, grade)
-  if !@roster[grade]
-   @roster[grade] = [student]
- else
-   @roster[grade] << student
- end
+  @roster[grade] ||= student
+   @roster[grade] << [student]
+
 end
 def grade(number)
 @roster.each do |gr, students|
