@@ -21,7 +21,7 @@ def sort
 @roster.each do |gr, students|
 @roster[gr] = students.sort
 end # end of each
-return @roster
+
 end #end of sort method
 
 
